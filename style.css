@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+.logo-container p {
+  font-family: 'Lobster';
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style-type: none;
+}
+nav {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+nav ul li a {
+  font-size: 14px;
+}
+nav ul li a:hover {
+  color: whitesmoke;
+}
+header {
+  background-color: orange;
+  padding: 10px 0;
+}
+section {
+  background-color: orange;
+}
+/* mobile nav */
+.topnav {
+  overflow: hidden;
+  position: relative;
+  display: none;
+}
+
+.topnav #myLinks {
+  display: none;
+  background-color: orange;
+  padding-top: 6%;
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: transparent;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  color: black;
+  font-weight: bold;
+}
+/* banner */
+.orange {
+  font-family: 'Lobster';
+}
+.banner {
+  width: 70%;
+  margin: auto;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner :nth-child(1) {
+  font-weight: 500;
+  font-size: 64px;
+}
+.orange {
+  margin-left: 20%;
+  font-size: 200px;
+}
+/* about */
+.about h1,
+.about p {
+  text-align: center;
+}
+.about h1 {
+  font-size: 46px;
+  font-weight: 500;
+}
+.us {
+  color: whitesmoke;
+}
+.about p {
+  margin-top: 3%;
+  font-size: 42px;
+  font-weight: 600;
+  font-style: italic;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  margin-top: 2%;
+}
+.image-container img {
+  width: 100%;
+}
+/* pricing */
+.top-price {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10%;
+}
+.top-price :nth-child(1) {
+  font-size: 46px;
+}
+.plans {
+  color: whitesmoke;
+}
+/* planning */
+.plan {
+  width: 70%;
+  margin: auto;
+}
+.name {
+  font-weight: 700;
+  font-size: 24px;
+}
+.price {
+  font-size: 28px;
+  margin: 20px 0;
+}
+.user {
+  font-size: 16px;
+}
+.bold {
+  font-weight: 700;
+}
+.choose {
+  margin-top: 50px;
+}
+.choose a {
+  padding: 10px 20px;
+  background-color: black;
+  color: whitesmoke;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.choose a:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+.plan {
+  display: flex;
+  justify-content: space-around;
+}
+.planning {
+  margin-top: 5%;
+  border: 1px solid black;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: rgb(218, 150, 24);
+}
+/* contact */
+
+.contacts {
+  padding-top: 10%;
+  text-align: center;
+}
+.contacts p {
+  margin: 20px 0;
+}
+.contact-info {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.contact-info p {
+  font-size: 20px;
+  margin: 0 50px;
+}
+.contacts h1 {
+  font-size: 46px;
+  font-weight: 500;
+}
+/* form */
+form {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 50px;
+  margin-top: 50px;
+  background-color: rgb(218, 150, 24);
+}
+.form-info h5 {
+  margin-bottom: 20px;
+}
+#box,
+#messagebox {
+  border-radius: 5px;
+  padding: 7px 20px;
+}
+.formbutton {
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+.formbutton:hover {
+  background-color: orange;
+}
+/* media queries */
+@media only screen and (max-width: 1500px) {
+  form {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .plan {
+    width: 100%;
+  }
+  form {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .topnav {
+    display: contents;
+  }
+  nav {
+    display: none;
+  }
+  .about h1 {
+    font-size: 34px;
+  }
+  .about p {
+    font-size: 38px;
+  }
+  .banner {
+    height: 40vh;
+  }
+  .banner :nth-child(1) {
+    font-size: 52px;
+  }
+  .orange {
+    font-size: 82px;
+    margin-left: 40%;
+  }
+  .top-price :nth-child(1) {
+    font-size: 34px;
+  }
+  .plan {
+    flex-direction: column;
+    width: 60%;
+  }
+  .contacts h1 {
+    font-size: 34px;
+  }
+  .contact-info p {
+    font-size: 15px;
+    margin: 0px 20px;
+  }
+  form {
+    width: 60%;
+  }
+  .planning {
+    margin: 5px 0;
+  }
+}
+@media only screen and (max-width: 673px) {
+  form {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  form {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  nav {
+    display: none;
+  }
+  .topnav #myLinks a {
+    font-size: 14px;
+  }
+  .topnav #myLinks {
+    padding-top: 40px;
+  }
+  .about h1 {
+    font-size: 32px;
+  }
+  .about p {
+    font-size: 22px;
+  }
+  .image-container {
+    height: 290px;
+  }
+  .banner {
+    height: 40vh;
+  }
+  .banner :nth-child(1) {
+    font-size: 24px;
+  }
+  .banner h1 {
+    font-size: 64px;
+  }
+  .top-price :nth-child(1) {
+    font-size: 32px;
+  }
+  .plan {
+    flex-direction: column;
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+  #messagebox {
+    width: 100%;
+  }
+  .contacts h1 {
+    font-size: 32px;
+  }
+  .contact-info {
+    flex-direction: column;
+  }
+  .contact-info a {
+    font-size: 14px;
+  }
+  .contact-info p {
+    margin: 5px 0;
+  }
+}
